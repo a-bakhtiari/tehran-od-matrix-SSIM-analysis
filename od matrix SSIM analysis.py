@@ -157,11 +157,11 @@ for x in week_day_dict.keys():
 """# Aggregate TAZ's"""
 
 # read key information that are going to replace taz
-shardari_key = pd.read_excel('https://www.dropbox.com/scl/fi/jkcn7cv8krp257bqsawob/SE1393-TAZ-Navahi-Mantaghe.xlsx?dl=1&rlkey=pm973vqadncdguoov3lwgrt3v')
-pahneh_key = pd.read_excel('https://www.dropbox.com/scl/fi/jes5z6t6kqxkf3elr2fs4/Subregion-Pahneh.xlsx?dl=1&rlkey=aziamyo2ierw6zm23t1g0prw9')
+shardari_key = pd.read_excel('SE1393-TAZ-Navahi-Mantaghe.xlsx')
+pahneh_key = pd.read_excel('Subregion-Pahneh.xlsx')
 
 #there are two sheets so we have to seperate them before making the dataframe
-xls = pd.ExcelFile('https://www.dropbox.com/scl/fi/dnz6opfauv56bh5mzehbk/tabagheh-bandi-navahi-finall.xlsx?dl=1&rlkey=ojm36q2zbwtx31sz2zbhunuzf')
+xls = pd.ExcelFile('tabagheh-bandi-navahi-finall.xlsx')
 tabaghe_bandi_key = pd.read_excel(xls, 'Sheet1')
 
 #rename persian columns
