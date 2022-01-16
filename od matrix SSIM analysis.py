@@ -3,7 +3,6 @@
 #OD matrix
 """
 
-#download OD_matrix data
 
 import os
 import zipfile
