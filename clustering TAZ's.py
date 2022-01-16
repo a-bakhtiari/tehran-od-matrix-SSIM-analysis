@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans, Birch, AgglomerativeClustering, DBSCAN \
 from sklearn.metrics import silhouette_score
 import pandas as pd
 from google.colab import files
-dataframe = pd.read_excel('SE1393.xlsx)#read the zone file
+dataframe = pd.read_excel('SE1393.xlsx')#read the zone file
 dataframe.dropna(inplace=True)
 dataframe.rename(columns={'commercial_unit': 'commercial_landuse'}, inplace=True)
 dataframe
